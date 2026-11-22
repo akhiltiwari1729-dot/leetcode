@@ -1,14 +1,10 @@
 class Solution {
     public boolean checkString(String s) {
-        int flag=1;
-        char []arr=s.toCharArray();
-        for(int i=0;i<arr.length-1;i++){
-         if(arr[i]=='b'&& arr[i+1]=='a'){
-            flag =0;
-         }
-
-
+    //  for(int i=0;i<s.length();i++){
+        if(s.contains("ba")){
+            return false;
         }
-        return flag==1;
+     
+     return true;
     }
 }
